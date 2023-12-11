@@ -12,11 +12,15 @@
         android:layout_height="0dp"
         android:layout_marginTop="40dp"
         android:padding="20dp"
+        android:elevation="20dp"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
     <ImageView
         android:id="@+id/background"
         android:layout_width="match_parent"
