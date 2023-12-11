@@ -2,6 +2,7 @@ package com.exam.miguelacedo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ import com.google.android.material.snackbar.Snackbar;
 public class Register extends AppCompatActivity {
 ImageView logo;
 Button registrarse;
+Button exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ Button registrarse;
         setContentView(R.layout.activity_register);
 
         registrarse = findViewById(R.id.backToLoginButton);
+        exit = findViewById(R.id.registerButton);
         logo = findViewById(R.id.mainImage);
 
         ImageView background = findViewById(R.id.background);
@@ -37,5 +40,15 @@ Button registrarse;
                         .setAction("Action", null).show();
             }
         });
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "SALIENDO", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+                Intent intent = new Intent(Register.this, Acceso.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }

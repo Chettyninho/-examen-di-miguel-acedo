@@ -123,7 +123,6 @@
         android:layout_margin="30dp"
         app:icon="@drawable/baseline_exit_to_app_24"
         app:iconGravity="textStart"
-
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/backToLoginButton"
